@@ -41,7 +41,6 @@ class Song(models.Model):
         if not self.tracks.exists():
             transaction.on_commit(lambda: generate_tracks.delay(self.pk))
 
-
     def clean(self):
         if not (self.file or self.url):
             raise ValidationError(_('Must have file or url'))

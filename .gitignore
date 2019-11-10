@@ -1,0 +1,6 @@
+pretrained_models
+media
+**/*.pyc
+*.sqlite3
+.venv
+.vscode

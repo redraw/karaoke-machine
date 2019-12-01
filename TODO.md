@@ -1,2 +1,2 @@
-- [ ] extract audio from url, possibly with `youtube-dl`
+- [x] extract audio from url, possibly with `youtube-dl`
 - [ ] web UI

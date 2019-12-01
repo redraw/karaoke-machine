@@ -135,6 +135,16 @@ SPLEETER_PARAMS = {
     'bitrate': '128k'
 }
 
+# YoutubeDL
+YOUTUBE_DL_OPTS = {
+    'format': 'bestaudio/best',
+    'postprocessors': [{
+        'key': 'FFmpegExtractAudio',
+        'preferredcodec': 'mp3',
+        'preferredquality': '192',
+    }]
+}
+
 # Celery
 CELERY_BROKER_URL = 'redis://'
 CELERY_RESULT_BACKEND = 'redis://'
